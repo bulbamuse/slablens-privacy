@@ -121,7 +121,7 @@
   <body>
     <div class="container">
       <h1>SlabLens Privacy Policy</h1>
-      <p class="last-updated">Last Updated: December 31, 2025</p>
+      <p class="last-updated">Last Updated: January 3, 2026</p>
 
       <p>
         This SlabLens Privacy Policy describes how SlabLens ("SlabLens," "we,"
@@ -130,6 +130,10 @@
         you access or use our Chrome browser extension and related services
         (collectively, our "Services") and when you otherwise interact with us,
         such as through our customer support channels.
+      </p>
+
+      <p>
+        To use SlabLens, you must create an account by signing in with a third-party authentication provider. We collect certain account information as described below.
       </p>
 
       <p>
@@ -146,6 +150,22 @@
         our Services. In this section, we describe the categories of information
         we collect and the sources of this information.
       </p>
+
+      <h3>Information You Provide to Us</h3>
+      <p>
+        We collect information you provide directly to us when you create an account and use our Services:
+      </p>
+      <ul>
+        <li>
+          <strong>Account Information:</strong> To use SlabLens, you must create an account by signing in with a third-party authentication provider. When you sign in, we receive your email address, full name, and profile picture.
+        </li>
+        <li>
+          <strong>Community Grade Submissions:</strong> When you submit your own grade assessment (1-10 scale) for a trading card listing, we collect and store your submitted grade along with the listing information.
+        </li>
+        <li>
+          <strong>Communications:</strong> Any information you provide when contacting our customer support or communicating with us.
+        </li>
+      </ul>
 
       <h3>Information Collected Automatically</h3>
       <p>
@@ -171,37 +191,42 @@
           process.
         </li>
         <li>
-          <strong>Anonymous User Identifier:</strong> We generate and store a
-          unique anonymous identifier locally on your device using local browser
-          storage. This identifier is sent to our backend service to track
-          your usage count and enforce daily usage limits. This identifier does
-          not contain any personally identifiable information and cannot be used
-          to identify you.
+          <strong>User Account Information:</strong> When you sign in, we create a unique user account ID that links all your activity within SlabLens. All analyses, grade submissions, and usage data are associated with your user account. Session authentication tokens are stored locally in your browser's Chrome storage to keep you signed in.
         </li>
         <li>
           <strong>Usage Statistics:</strong> We collect information about your
           usage of SlabLens, including the number of analyses you have
           performed, the dates and times of those analyses, and your daily usage
           patterns over the past 7 days. This data is stored on our servers in
-          association with your anonymous identifier.
+          association with your user account.
         </li>
         <li>
           <strong>Analysis Results:</strong> We store the results of each card
           grading analysis, including the grade (1-10 scale), confidence level,
           and detailed condition assessment. This data is stored in association
-          with the listing URL and your anonymous identifier.
+          with the listing URL and your user account.
+        </li>
+      </ul>
+
+      <h3>Information We Collect from Other Sources</h3>
+      <p>
+        We collect information about you from third-party sources:
+      </p>
+      <ul>
+        <li>
+          <strong>Authentication Provider:</strong> When you sign in, we receive your email address, full name, and profile picture from your authentication provider in accordance with their authorization procedures.
+        </li>
+        <li>
+          <strong>Trading Card Listing Pages:</strong> When you use SlabLens to analyze a card, we collect card images, titles, and prices from the listing page you are viewing.
         </li>
       </ul>
 
       <h3>Information We Do Not Collect</h3>
       <p>SlabLens does not collect:</p>
       <ul>
-        <li>
-          Your name, email address, phone number, or other personally
-          identifiable information
-        </li>
+        <li>Phone number or other contact information beyond your email address</li>
         <li>Payment or financial information</li>
-        <li>Authentication credentials or passwords</li>
+        <li>Authentication credentials or passwords (we use Google OAuth)</li>
         <li>Location data, IP addresses, or GPS coordinates</li>
         <li>Personal communications such as emails, texts, or chat messages</li>
         <li>
@@ -213,6 +238,12 @@
       <h2 id="use">Use of Information</h2>
       <p>We use the information we collect to:</p>
       <ul>
+        <li>Create and manage your user account</li>
+        <li>Authenticate your access to SlabLens</li>
+        <li>Display your profile information (name, avatar) in the extension</li>
+        <li>Link your analyses and grade submissions to your account</li>
+        <li>Enable community grading features and display community statistics</li>
+        <li>Enforce per-user usage limits</li>
         <li>
           Provide, maintain, and improve our AI-powered card grading service
         </li>
@@ -223,7 +254,6 @@
         <li>
           Cache analysis results to avoid re-analyzing the same listings
         </li>
-        <li>Track and enforce daily usage limits</li>
         <li>Provide you with usage statistics and analysis history</li>
         <li>
           Monitor and analyze trends and usage patterns to improve our Services
@@ -244,18 +274,13 @@
       <h3>Service Providers</h3>
       <ul>
         <li>
-          <strong>AI Service Provider:</strong> We send card images extracted from
-          listings to a third-party AI service for automated condition analysis. This
-          service processes images according to their privacy policy and terms
-          of service. We do not send any personally identifiable information to
-          this provider.
+          <strong>AI Service Provider:</strong> We send card images, titles, and prices extracted from listings to a third-party AI service for automated condition analysis and grading. We do not send any account information (email, name, or avatar) to this provider. This service processes data according to their privacy policy and terms of service.
         </li>
         <li>
-          <strong>Cloud Database Service:</strong> We use a third-party cloud database
-          service to store anonymous user identifiers, usage statistics,
-          analysis results, and listing URLs. This service acts as our data
-          processor and handles this information in accordance with their
-          privacy policy.
+          <strong>Cloud Database and Authentication Service:</strong> We use a third-party cloud service to store user account information (email, name, avatar), user IDs, usage statistics, analysis results, grade submissions, and listing URLs. This service also provides our authentication infrastructure. This service acts as our data processor and handles information in accordance with their privacy policy.
+        </li>
+        <li>
+          <strong>Authentication Provider:</strong> We use a third-party authentication service for user sign-in. When you sign in, this service provides us with your email address, full name, and profile picture from your account in accordance with their authorization procedures.
         </li>
       </ul>
 
@@ -264,7 +289,7 @@
         <li>
           <strong>Affiliate Program:</strong> When you open SlabLens on a
           listing page, we automatically redirect you to an affiliate
-          version of that listing URL. This redirect includes your anonymous
+          version of that listing URL. This redirect includes your user account
           identifier as a custom tracking parameter. If you make a purchase
           after this redirect, the merchant may share transaction information with
           us through their affiliate program, and we may earn a commission. See
@@ -311,7 +336,7 @@
 
       <p>
         The affiliate URL includes tracking parameters that identify the click
-        as coming from SlabLens, as well as your anonymous user identifier. If
+        as coming from SlabLens, as well as your user account identifier. If
         you make a purchase after this redirect, we may earn a commission. This
         commission helps us keep SlabLens free to use.
       </p>
@@ -324,14 +349,14 @@
         <li>You are not charged any additional fees for using SlabLens</li>
         <li>The merchant pays us the commission, not you</li>
         <li>
-          Your anonymous identifier may be shared through the affiliate link
+          Your user account identifier may be shared through the affiliate link
         </li>
       </ul>
 
       <h2 id="retention">Data Retention</h2>
       <p>
-        We retain your anonymous identifier and usage data for as long as you
-        continue to use SlabLens. Card images are temporarily stored during the
+        We retain your user account information (email, name, avatar) and usage data for as long as you
+        continue to use SlabLens, or until you request account deletion. Card images are temporarily stored during the
         analysis process and may be retained for caching purposes to improve
         performance.
       </p>
@@ -342,7 +367,26 @@
         prevent duplicate analyses of the same listings.
       </p>
 
+      <p>
+        Community grade submissions are retained indefinitely as public community data to provide aggregate statistics to all users.
+      </p>
+
+      <p>
+        Session authentication tokens are stored locally in your browser and are cleared when you sign out.
+      </p>
+
       <h2 id="choices">Your Choices</h2>
+
+      <h3>Account Information</h3>
+      <p>
+        You can view your account information (name, email, avatar) within the SlabLens extension.
+      </p>
+      <p>
+        To delete your account and associated data, please email us at <a href="mailto:bulba.lomuse@gmail.com">bulba.lomuse@gmail.com</a>. Note that community grade submissions may be retained as aggregated statistics even after account deletion.
+      </p>
+      <p>
+        You can sign out at any time within the extension, which clears your local session tokens.
+      </p>
 
       <h3>Uninstalling the Extension</h3>
       <p>
@@ -353,8 +397,8 @@
 
       <h3>Clearing Local Data</h3>
       <p>
-        Your anonymous identifier is stored locally on your device using
-        local browser storage. Uninstalling the extension will clear this local
+        Your session tokens and account data are stored locally on your device using
+        Chrome's local storage. Uninstalling the extension or signing out will clear this local
         data.
       </p>
 
